@@ -1,6 +1,1 @@
 @import "tailwindcss";
-
-body {
-    --tw-bg-opacity: 1;
-    background-color: (18.74% .024 280.08 / var(--tw-bg-opacity, 1))
-}
