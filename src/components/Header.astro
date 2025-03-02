@@ -7,21 +7,21 @@ import ShowImage from './ShowImage.astro'
 
 <header class=" lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:w-112 lg:items-start lg:overflow-y-auto xl:w-120"> 
   <div class="relative z-10 mx-auto lg:min-h-full lg:flex-auto">
-    <div class="m-2 rounded-lg bg-light-card pb-4 pt-10 lg:pb-12 lg:pt-16 dark:bg-dark-card">
+    <div class="m-2 rounded-lg bg-light-card dark:bg-dark-card">
       <ShowImage image="https://i.scdn.co/image/ab67656300005f1fbc07b3af063cfcbc55b8f73e" />
-      <div class="px-4 sm:px-6 md:px4 lg:px-16">
-        <p class="mt-8 text-center text-2xl font-bold text-light-text-heading lg:text-left dark:text-text-bg">
+      <div>
+        <p class="mt-2 text-center text-4xl font-bold text-light-text-heading lg:text-left dark:text-text-bg">
           {podcastInfo.title}
         </p>
-        <p class="mt-2 text-center text-lg lg:text-left dark:text-text-bg">
+        <p class="mt-2 text-center text-2xl font-bold text-light-text-heading lg:text-left dark:text-text-bg">
           {podcastInfo.description}
         </p>
       </div>
     </div>
-      <div class="px-4 sm:px-6 md:px-4 lg:px-16 dark:text-text-bg">
+      <div class="dark:text-text-bg">
         <Platforms />
       </div>
-      <div class="px-4 sm:px-6 md:px-4 lg:px-16 dark:text-text-bg">
+      <div class="dark:text-text-bg">
         <Hosts />
       </div>
   </div>
