@@ -8,11 +8,11 @@ import podcastInfo from "../lib/podcast.config";
 const { platforms } = podcastInfo;
 ---
 
-<h3 class="section-heading hidden lg:block">Escuchanos</h3>
+<h3 class="section-heading hidden lg:block text-2xl">Escuchanos</h3>
 <div class="mt-16 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start" >
   {
     platforms.spotify && (
-      <a href={platforms.spotify} target="_blank" rel="noopener noreferrer">
+      <a href={platforms.spotify}  target="_blank" rel="noopener noreferrer">
         <Spotify />
       </a>
     )
@@ -25,7 +25,7 @@ const { platforms } = podcastInfo;
       )
     }
 </div>
-<h3 class="section-heading hidden lg:block">Redes</h3>
+<h3 class="section-heading hidden lg:block text-2xl">Redes</h3>
 <div class="mt-16 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start">
   {
     platforms.kofi && (
