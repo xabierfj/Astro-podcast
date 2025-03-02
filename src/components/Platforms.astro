@@ -1,18 +1,44 @@
 ---
+import Spotify from "../icons/spotify.astro";
+import Ivoox from "../icons/ivoox.astro";
+import Kofi from "../icons/kofi.astro";
+import Bluesky from "../icons/bluesky.astro";
 import podcastInfo from "../lib/podcast.config";
-import Spotify from "../icon/spotify.astro";
-import Instagram from "../icon/instagram.astro";
-import Kofi from "../icon/kofi.astro";
 
 const { platforms } = podcastInfo;
 ---
 
 <h3 class="section-heading hidden lg:block">Escuchanos</h3>
 <div class="mt-16 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start" >
-  <Spotify />
+  {
+    platforms.spotify && (
+      <a href={platforms.spotify} target="_blank" rel="noopener noreferrer">
+        <Spotify />
+      </a>
+    )
+  }
+    {
+      platforms.ivox && (
+        <a href={platforms.ivox} target="_blank" rel="noopener noreferrer">
+          <Ivoox />
+        </a>
+      )
+    }
 </div>
 <h3 class="section-heading hidden lg:block">Redes</h3>
 <div class="mt-16 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start">
-  <Kofi />
-  <Instagram />
+  {
+    platforms.kofi && (
+      <a href={platforms.kofi} target="_blank" rel="noopener noreferrer">
+        <Kofi />
+      </a>
+    )
+  }
+    {
+      platforms.bluesky && (
+        <a href={platforms.bluesky} target="_blank" rel="noopener noreferrer">
+          <Bluesky />
+        </a>
+      )
+    }
 </div>
