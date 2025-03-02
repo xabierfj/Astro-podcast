@@ -2,30 +2,31 @@
 import Header from "../components/Header.astro";
 import Dots from "../components/Dots.astro";
 import "../styles/global.css";
-const {title} = Astro.props;
+const { title } = Astro.props;
 ---
+
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name='description' content='Podcast de Proletario y Parasito sobre los simpsons' />
-		<meta name='keywords' content='podcast, los simpsons, proletario y parasito' />
-		<meta name='author' content='Xabier Figueroa' />
-		<meta name='robots' content='index, follow' />
-		<meta name='googlebot' content='index, follow' />
-		<meta name='og:type' content='website' />
-		<meta name='og:locale' content='es_ES' />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="bg-background font-inter text-light-text-body antialiased dark:bg-dark-background dark:text-dark-text-body">
-		<Header />
-		<main class="mx-2 rounded-lg bg-light-card lg:relative lg:ml-112 lg:min-h-screen xl:ml-120 lg:pr-1 pl-5 dark:bg-dark-card">
-			<div class="relative mt-2">
-				<Dots />
-			</div>
-			<slot />
-		</main>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content="Podcast de Proletario y Parasito sobre los simpsons" />
+    <meta name="keywords" content="podcast, los simpsons, proletario y parasito" />
+    <meta name="author" content="Xabier Figueroa" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="og:type" content="website" />
+    <meta name="og:locale" content="es_ES" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-background font-inter text-light-text-body antialiased dark:bg-dark-background dark:text-dark-text-body flex flex-row space-x-3 h-screen">
+    <Header />
+    <!-- <main class="mx-2 rounded-lg bg-gray-700 lg:relative lg:ml-112 lg:min-h-screen xl:ml-120 ml-160 lg:pr-1 pl-5 dark:bg-dark-card"> -->
+    <main class="bg-gray-600">
+      <div class="relative mt-3">
+        <slot />
+      </div>
+    </main>
+  </body>
 </html>
