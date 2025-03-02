@@ -1,14 +1,18 @@
 ---
 import podcastInfo from "../lib/podcast.config";
+import Spotify from "../icon/spotify.astro";
+import Instagram from "../icon/instagram.astro";
+import Kofi from "../icon/kofi.astro";
 
 const { platforms } = podcastInfo;
 ---
 
 <h3 class="section-heading hidden lg:block">Escuchanos</h3>
 <div class="mt-16 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start" >
-  Aqui van los iconos
+  <Spotify />
 </div>
 <h3 class="section-heading hidden lg:block">Redes</h3>
 <div class="mt-16 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start">
-  Aqui van las redes
+  <Kofi />
+  <Instagram />
 </div>
