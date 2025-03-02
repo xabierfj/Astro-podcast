@@ -7,10 +7,12 @@ const { hosts } = podcastInfo;
   <h3 class="section-heading pb-6">Presentado por</h3>
   {
     hosts.map((host) => (
-      <div class="mb-4 flex items-center">
-        <img class="mr-4 h-12 w-12 rounded-lg" height={48} src={host.img} width={48} alt="" />
-        {host.name}
-      </div>
+      <a href={host.bluesky} target="_blank" rel="noopener noreferrer">
+        <div class="mb-4 flex items-center">
+          <img class="mr-4 h-12 w-12 rounded-lg" height={48} src={host.img} width={48} alt="" />
+          {host.name}
+        </div>
+      </a>
     ))
   }
 </div>
