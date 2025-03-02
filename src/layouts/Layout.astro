@@ -11,12 +11,8 @@ const {title} = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="bg-base-200 min-h-screen">
-		<div class="container mx-auto lg:max-w-[960px]">
-			<div class="md:flex md:justify-center w-full">
-				<main class="-mt-5 w-full">
-					<slot />
-				</main>
-			</div>
-		</div>
+		<main class="container mx-auto max-w-[950px]">
+			<slot />
+		</main>
 	</body>
 </html>
