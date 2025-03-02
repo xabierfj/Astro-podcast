@@ -2,7 +2,8 @@
 
 
 @theme {
-    --color-background: #2D283E;
+    --color-background: oklch(13.85% .025 273.24 / var(--tw-bg-opacity, 1));
+    --color-card: #9D8D8F;
     --color-redish: #E64833;
     --color-brownish: #874F41;
     --color-blueish: #90AEAD;
