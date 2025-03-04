@@ -1,9 +1,38 @@
 ---
-import Image from "astro/components/Image.astro";
-
-const { image } = Astro.props;
+import 'atropos/css';
 ---
 
-<div class="sm:px-6 md:px-4 w-[300px]">
-  <Image class="w-full" src={image} alt="" />
+<!-- <div class="sm:px-6 md:px-4 w-[300px]">
+  <div class="atropos show-art">
+    <div class="atropos-scale">
+      <div class="atropos-rotate">
+        <div class="atropos-inner">
+            <img class="w-full relative mx-auto block overflow-hidden rounded-lg sm:w-64 sm:rounded-xl lg:w-auto lg:rounded-2xl" src="../images/logo.webp" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script>
+  import Atropos from 'atropos';
+
+  document.addEventListener('astro:page-load', () => {
+    Atropos({
+      el: '.show-art'
+    });
+  });
+</script>
+ -->
+  
+ <div class="sm:px-6 md:px-4 w-[300px]">
+   <div class="atropos show-art">
+     <div class="atropos-scale">
+       <div class="atropos-rotate">
+         <div class="atropos-inner">
+             <img class="w-full relative mx-auto block overflow-hidden rounded-lg sm:w-64 sm:rounded-xl lg:w-auto lg:rounded-2xl" src="../images/logo.webp" alt="" />
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>

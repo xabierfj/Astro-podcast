@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import 'atropos/styles.css';
+@import 'atropos';
+
 
 
 @theme {
