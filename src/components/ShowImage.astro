@@ -1,7 +1,9 @@
 ---
+import Image from "astro/components/Image.astro";
+
 const { image } = Astro.props;
 ---
 
 <div class="sm:px-6 md:px-4 w-[300px]">
-  <img class="w-full" src={image} alt="" />
+  <Image class="w-full" src={image} alt="" />
 </div>

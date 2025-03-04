@@ -1,4 +1,6 @@
 import { podcastInfo } from "./config";
+import Alberto from '../images/alberto.webp';
+import Carlos from '../images/carlos.webp';
 
 export default podcastInfo({
   title:'Proletario y Parasito',
@@ -6,12 +8,12 @@ export default podcastInfo({
   hosts: [
     {
       name: 'Carlos Noroeste',
-      img: 'https://cdn.bsky.app/img/avatar/plain/did:plc:2au43qgbq3qryxot2i65mnq4/bafkreicuyon5t2qyjmq4iitpubcl4mkxinfwdfkmjyeok4hs5zad6gt4vu@jpeg',
+      img: Carlos.src,
       bluesky: 'https://bsky.app/profile/carlosnoroeste.bsky.social',
     },
     {
       name: 'Alberto Graupera',
-      img: 'https://cdn.bsky.app/img/avatar/plain/did:plc:ahpmghd456jekhv7n4euifpr/bafkreig4rzdc7gksp3hfzq5j64vc2etcw2yvvh63q4b6apl7y4g3yohssy@jpeg',
+      img: Alberto.src,
       bluesky: 'https://bsky.app/profile/albertograupera.bsky.social',
     }
   ],
