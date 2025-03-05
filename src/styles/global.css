@@ -1,10 +1,10 @@
 @import "tailwindcss";
-@import 'atropos/styles.css';
-@import 'atropos';
 
 
 
 @theme {
+    --tw-bg-opacity: 1;
+    --color-test: oklch(18.74% .024 280.08 / var(--tw-bg-opacity, 1));
     --color-background: oklch(13.85% .025 273.24 / var(--tw-bg-opacity, 1));
     --color-card: #9D8D8F;
     --color-redish: #E64833;

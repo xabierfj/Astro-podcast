@@ -7,11 +7,11 @@ import Logo from '../images/logo.webp'
 
 ---
 
-<header class="flex w-112 max-h-screen scrollbar-thin items-start overflow-y-auto xl:w-120 bg-card m-3 pr-2 rounded-lg"> 
+<header class="flex max-h-screen scrollbar-thin items-start overflow-y-auto m-2 xl:mt-3 xl:pr-2 xl:w-120 "> 
   <div class="mx-auto lg:min-h-full lg:flex-auto">
-    <div class="m-2 rounded-lg bg-light-card dark:bg-dark-card">
-      <ShowImage image={Logo} />
+    <div class="pt-10 rounded-lg bg-test dark:bg-card">
       <div class="px-4 sm:px6 md:px4-lg:px16">
+        <ShowImage image={Logo} />
         <p class="mt-2 text-center text-3xl font-bold text-light-text-heading lg:text-left dark:text-text-bg">
           {podcastInfo.title}
         </p>

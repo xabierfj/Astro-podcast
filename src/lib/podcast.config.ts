@@ -4,7 +4,7 @@ import Carlos from '../images/carlos.webp';
 
 export default podcastInfo({
   title:'Proletario y Parasito',
-  description:'El podcast que no predijeron los Simpsons. Si eres de los que saben dibujar la dignidad, todo te sale a pedir de Milhouse y pides de beber albóndigas, este es tu podcast.',
+  description:'El podcast que no predijeron los Simpsons. Si eres de los que todo te sale a pedir de Milhouse, este es tu podcast.',
   hosts: [
     {
       name: 'Carlos Noroeste',
