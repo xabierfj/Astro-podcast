@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@import './gradient-icon.css';
 
 
 @theme {
@@ -11,4 +11,6 @@
     --color-brownish: #874F41;
     --color-blueish: #90AEAD;
     --color-text-bg: #F5F5F5;
+    --color-light-text: rgb(255,255,255 / var(--tw-bg-opacity, 1));
+
   }

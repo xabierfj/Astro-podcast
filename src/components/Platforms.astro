@@ -1,44 +1,48 @@
 ---
-import Spotify from "../icons/spotify.astro";
-import Ivoox from "../icons/ivoox.astro";
-import Kofi from "../icons/kofi.astro";
-import Bluesky from "../icons/bluesky.astro";
 import podcastInfo from "../lib/podcast.config";
 
 const { platforms } = podcastInfo;
 ---
-
-<h3 class="section-heading hidden lg:block text-2xl">Escuchanos</h3>
-<div class="mt-16 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start" >
-  {
-    platforms.spotify && (
-      <a href={platforms.spotify}  target="_blank" rel="noopener noreferrer">
-        <Spotify />
-      </a>
-    )
-  }
+<div class="flex flex-row lg:flex-col">
+  <div class="mt-1 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start" >
+    {
+      platforms.spotify && (
+        <a class="h-10 w-10 gradient-icon spotify" href={platforms.spotify}  target="_blank" rel="noopener noreferrer">
+        </a>
+      )
+    }
     {
       platforms.ivox && (
-        <a href={platforms.ivox} target="_blank" rel="noopener noreferrer">
-          <Ivoox />
+        <a class="h-6 w-6 gradient-icon ivoox" href={platforms.ivox} target="_blank" rel="noopener noreferrer">
         </a>
       )
     }
-</div>
-<h3 class="section-heading hidden lg:block text-2xl">Redes</h3>
-<div class="mt-16 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start">
-  {
-    platforms.kofi && (
-      <a href={platforms.kofi} target="_blank" rel="noopener noreferrer">
-        <Kofi />
-      </a>
-    )
-  }
     {
-      platforms.bluesky && (
-        <a href={platforms.bluesky} target="_blank" rel="noopener noreferrer">
-          <Bluesky />
+      platforms.kofi && (
+        <a class="h-6 w-6 gradient-icon kofi" href={platforms.kofi} target="_blank" rel="noopener noreferrer">
         </a>
       )
     }
+      {
+        platforms.bluesky && (
+          <a class="h-6 w-6 gradient-icon blueSky" href={platforms.bluesky} target="_blank" rel="noopener noreferrer">
+          </a>
+        )
+      }
+  </div>
 </div>
+
+<style>
+  .spotify {
+    mask-image: url(../icons/spotify.svg);
+  }
+  .ivoox {
+    mask-image: url(../icons/ivoox.svg);
+  }
+  .kofi {
+    mask-image: url(../icons/kofi.svg);
+  }
+  .blueSky {
+    mask-image: url(../icons/bluesky.svg);
+  }
+</style>

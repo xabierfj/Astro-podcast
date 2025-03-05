@@ -1,6 +1,5 @@
 ---
 import Header from "../components/Header.astro";
-import Dots from "../components/Dots.astro";
 import "../styles/global.css";
 const { title } = Astro.props;
 ---
@@ -42,5 +41,9 @@ const { title } = Astro.props;
   body {
     margin: 0;
     line-height: inherit;
-}
+  }
+  .text-light-text-body {
+    --tw-text-opacity: 1;
+    color: oklch(59.68% .017 285.89 / var(--tw-text-opacity, 1));
+  }
 </style>
