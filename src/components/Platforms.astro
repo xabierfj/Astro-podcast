@@ -4,45 +4,46 @@ import podcastInfo from "../lib/podcast.config";
 const { platforms } = podcastInfo;
 ---
 <div class="flex flex-row lg:flex-col">
-  <div class="mt-1 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start" >
-    {
-      platforms.spotify && (
-        <a class="h-6 w-6 gradient-icon spotify" href={platforms.spotify}  target="_blank" rel="noopener noreferrer">
-        </a>
-      )
-    }
-    {
-      platforms.ivox && (
-        <a class="h-6 w-6 gradient-icon ivoox" href={platforms.ivox} target="_blank" rel="noopener noreferrer">
-        </a>
-      )
-    }
-    {
-      platforms.kofi && (
-        <a class="h-6 w-6 gradient-icon kofi" href={platforms.kofi} target="_blank" rel="noopener noreferrer">
-        </a>
-      )
-    }
-      {
-        platforms.bluesky && (
-          <a class="h-6 w-6 gradient-icon blueSky" href={platforms.bluesky} target="_blank" rel="noopener noreferrer">
-          </a>
-        )
-      }
-  </div>
+    <div class="mt-1 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start">
+        <a class="h-6 w-6 spotify" href={platforms.spotify} target="_blank" rel="noopener noreferrer"></a>
+        <a class="h-6 w-6 ivoox" href={platforms.ivox} target="_blank" rel="noopener noreferrer"></a>
+        <a class="h-6 w-6 kofi" href={platforms.kofi} target="_blank" rel="noopener noreferrer"></a>
+        <a class="h-6 w-6 bluesky" href={platforms.bluesky} target="_blank" rel="noopener noreferrer"></a>
+        <a class="h-6 w-6 instagram" href={platforms.instagram} target="_blank" rel="noopener noreferrer"></a>
+    </div>
 </div>
 
 <style>
-  .spotify {
-    mask-image: url(../icons/spotify.svg);
+  :root {
+  --mask-color: oklch(67.65% 0.043 285.21);/* Default color */
   }
   .ivoox {
-    mask-image: url(../icons/ivoox.svg);
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background-color: var(--mask-color);
   }
   .kofi {
-    mask-image: url(../icons/kofi.svg);
+      mask-image: url(../icons/kofi.svg);
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background-color: var(--mask-color);
   }
-  .blueSky {
-    mask-image: url(../icons/bluesky.svg);
+  .instagram {
+      mask-image: url(../icons/instagram.svg);
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background-color: var(--mask-color);
+  }
+  .bluesky {
+      mask-image: url(../icons/bluesky.svg);
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background-color: var(--mask-color);
+  }
+  .spotify {
+      mask-image: url(../icons/spotify.svg);
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background-color: var(--mask-color);
   }
 </style>
