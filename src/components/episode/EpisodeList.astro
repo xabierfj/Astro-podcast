@@ -1,28 +1,17 @@
 ---
+import EpisodeItem from "./EpisodeItem.astro";
+
+
 ---
-<ul>
-  <li>
-    <div>
-      <img src="#" alt="Episode image">
-      <div>
-        <!-- Here's the date -->
-         <h2>
-           <a href="#">
-            Episodio 123: Título del episodio
-           </a>
-         </h2>
-         <p>Descripcion del episodio</p>
-         <div>
-            <a href="#">Escuchar</a>
-            <a href="#">Mostrar Notas</a>
-            <p>Episodio de refencia: 04x02: Pa' loca tu calva</p>
-         </div>
-      </div>
-    </div>
+<ul aria-label="Episodios">
+  <li class="border-b ">
+    <EpisodeItem title="Episodio 1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
   </li>
 </ul>
-<div>
-  <button>
-    <span> Mas episodios</span>
+<div class="mt-8 flex justify-center pb-16">
+  <button class="btn">
+    <span class="rounded-full px-8 py-4 text-center text-sm text-light-text-heading dark:text-white">
+       Mas episodios
+    </span>
   </button>
 </div>
