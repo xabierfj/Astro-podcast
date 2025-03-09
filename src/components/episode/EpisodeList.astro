@@ -1,11 +1,15 @@
 ---
 import EpisodeItem from "./EpisodeItem.astro";
-
+import { episodes } from "../../lib/rss";
 
 ---
 <ul aria-label="Episodios">
   <li class="border-b ">
-    <EpisodeItem title="Episodio 1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+    {
+      episodes.map((episode) => (
+        <EpisodeItem title={episode.title} description={episode.description} image={episode.image}  />
+      ))
+    }
   </li>
 </ul>
 <div class="mt-8 flex justify-center pb-16">

@@ -17,3 +17,11 @@ export function truncate(str: string, length: number) {
       return `${truncated.trim()}...`;
   } else return sanitizedString;
 }
+
+export default function FormattedDate(date: Date) {
+  return new Date(date).toLocaleDateString('es-ES', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+}

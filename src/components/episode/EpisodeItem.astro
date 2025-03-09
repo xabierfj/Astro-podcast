@@ -1,12 +1,12 @@
 ---
 
-const { title, description } = Astro.props
+const { title, description, date, media, duration, image } = Astro.props
 
 ---
 <div class="flex w-full flex-col py-12 lg:flex-row">
   <img 
-    src="https://img-static.ivoox.com/index.php?w=255&h=255&url=https://static-1.ivoox.com/audios/7/3/4/f/734f9e3c1b37ccc682538daad04a2c3e_XXL.jpg" 
-    alt="Episode image"
+    src={image} 
+    alt={title}
     aria-hidden="true"
     class="mb-3 block h-20 w-20 rounded-md lg:mr-6"
     height="80"
