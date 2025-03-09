@@ -2,12 +2,21 @@
 import EpisodeItem from "./EpisodeItem.astro";
 import { episodes } from "../../lib/rss";
 
+console.log(episodes[0].title);
 ---
 <ul aria-label="Episodios">
   <li class="border-b ">
     {
       episodes.map((episode) => (
-        <EpisodeItem title={episode.title} description={episode.description} image={episode.image}  />
+        <EpisodeItem 
+          title={episode.title} 
+          description={episode.description} 
+          image={episode.image} 
+          date={episode.publishDate}
+          media={episode.enclosure.url}
+          duration={episode.duration}
+          slug={episode.slug}
+            />
       ))
     }
   </li>

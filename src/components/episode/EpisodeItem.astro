@@ -1,6 +1,6 @@
 ---
 
-const { title, description, date, media, duration, image } = Astro.props
+const { title, slug, description, date, media, duration, image } = Astro.props
 
 ---
 <div class="flex w-full flex-col py-12 lg:flex-row">
@@ -13,7 +13,9 @@ const { title, description, date, media, duration, image } = Astro.props
     width="80"
   />
   <div class="flex flex-col">
-    <!-- Here's the date -->
+      <time class="section-heading" datetime={date}> 
+        {date}
+      </time>
      <h2 class="my-2 text-lg font-bold text-light-text-heading dark:text-text-bg">
        <a href="#">
         {title}
