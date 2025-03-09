@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1"  viewBox="0 0 241 194">
-  <!-- Generator: Adobe Illustrator 29.2.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 108)  -->
   <defs>
     <style>
       .st0, .st1 {
-        fill: #fff;
+        fill: #cabba1;
       }
 
       .st1, .st2 {
@@ -12,11 +11,12 @@
       }
 
       .st3 {
-        fill: #202020;
+        display: nmo
+        fill: black;
       }
 
       .st2 {
-        fill: none;
+        fill: black;
       }
     </style>
   </defs>

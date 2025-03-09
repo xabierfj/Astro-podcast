@@ -11,5 +11,13 @@
     --color-blueish: #90AEAD;
     --color-text-bg: #F5F5F5;
     --color-light-text: rgb(255,255,255 / var(--tw-bg-opacity, 1));
-
+    --color-gradient-dark: background-image: radial-gradient(77% 77% at 50% 0%, #586984 0%, rgba(88, 105, 132, 0) 100%);
   }
+
+.section-heading {
+  @apply text-base font-bold uppercase tracking-wide dark:text-white py-3;
+}
+  
+/* .section-heading-underlined {
+  @apply section-heading border-b pb-4 dark:border-dark-border;
+} */

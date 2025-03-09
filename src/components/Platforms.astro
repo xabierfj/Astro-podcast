@@ -4,20 +4,21 @@ import podcastInfo from "../lib/podcast.config";
 const { platforms } = podcastInfo;
 ---
 <div class="flex flex-row lg:flex-col">
-    <div class="mt-1 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start">
-        <a class="h-6 w-6 spotify" href={platforms.spotify} target="_blank" rel="noopener noreferrer"></a>
-        <a class="h-6 w-6 ivoox" href={platforms.ivox} target="_blank" rel="noopener noreferrer"></a>
-        <a class="h-6 w-6 kofi" href={platforms.kofi} target="_blank" rel="noopener noreferrer"></a>
-        <a class="h-6 w-6 bluesky" href={platforms.bluesky} target="_blank" rel="noopener noreferrer"></a>
-        <a class="h-6 w-6 instagram" href={platforms.instagram} target="_blank" rel="noopener noreferrer"></a>
+    <div class="flex flex-row justify-around">
+        <a class="h-7 w-7 spotify" href={platforms.spotify} target="_blank" rel="noopener noreferrer"></a>
+        <a class="h-7 w-7 ivoox" href={platforms.ivox} target="_blank" rel="noopener noreferrer"></a>
+        <a class="h-7 w-7 kofi" href={platforms.kofi} target="_blank" rel="noopener noreferrer"></a>
+        <a class="h-7 w-7 bluesky" href={platforms.bluesky} target="_blank" rel="noopener noreferrer"></a>
+        <a class="h-7 w-7 instagram" href={platforms.instagram} target="_blank" rel="noopener noreferrer"></a>
     </div>
 </div>
 
 <style>
   :root {
-  --mask-color: oklch(67.65% 0.043 285.21);/* Default color */
+  --mask-color: #8b3737;/* Default color */
   }
   .ivoox {
+      mask-image: url(../icons/ivoox.svg);
       mask-size: contain;
       mask-repeat: no-repeat;
       background-color: var(--mask-color);
@@ -26,7 +27,7 @@ const { platforms } = podcastInfo;
       mask-image: url(../icons/kofi.svg);
       mask-size: contain;
       mask-repeat: no-repeat;
-      background-color: var(--mask-color);
+      background-color: currentColor;
   }
   .instagram {
       mask-image: url(../icons/instagram.svg);

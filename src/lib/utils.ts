@@ -23,9 +23,9 @@ export function Truncate(str: any, length: number) {
 }
 
 export default function FormattedDate(date: string) {
-  return new Date(date).toLocaleDateString('es-ES', {
+  return new Date(date).toLocaleDateString('es-es', {
     year: 'numeric',
-    month: 'long',
+    month: 'short',
     day: '2-digit'
   });
 }

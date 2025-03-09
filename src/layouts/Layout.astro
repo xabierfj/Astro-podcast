@@ -18,22 +18,21 @@ const { title } = Astro.props;
     <meta name="og:locale" content="es_ES" />
     <title>{title}</title>
   </head>
-  <body class="bg-background font-inter text-light-text-body antialiased dark:bg-background dark:text-dark-text-body flex flex-col xl:flex-row sm:felx-col h-screen w-screen">
-    <Header />
-    <!-- <main class="mx-2 rounded-lg bg-gray-700 lg:relative lg:ml-112 lg:min-h-screen xl:ml-120 ml-160 lg:pr-1 pl-5 dark:bg-dark-card"> -->
-    <main class="bg-gray-600 max-h-screen w-full my-3 mr-3 pr-2 rounded-lg">
-      <div class="relative mt-3">
-        <div class="max-w-4xl">
-          <div class:list={[
-          'mb-12 border-b pb-6 lg:mb16 lg:pb10 dark:border-dark-border',
-          Astro.url.pathname === '/' && 'hidden',
-          ]}>
-          Test
+  <body class="bg-background font-inter text-light-text-body antialiased dark:bg-blue-500 dark:text-dark-text-body">
+      <div class="grid h-full w-full gap-2 p-2 grid-cols-1 xl:grid-cols-4 rounded-lg">
+        <Header />
+        <main class="xl:col-span-3 col-span-1 rounded-lg dark:bg-test"> 
+          <div class="max-w-4xl">
+            <div class:list={[
+            'mb-12 border-b pb-6 lg:mb16 lg:pb10 dark:border-dark-border',
+            Astro.url.pathname === '/' && 'hidden',
+            ]}>
+            Test
+            </div>
+            <slot />
           </div>
-          <slot />
-        </div>
+        </main>
       </div>
-    </main>
   </body>
 </html>
 
