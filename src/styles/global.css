@@ -3,21 +3,32 @@
 
 @theme {
     --tw-bg-opacity: 1;
+    --color-dark-backgroud: #060813;
+    --color-dark-border: #161e32;
+    --color-dark-button: #171827;
+    --color-dark-input-bg: #171828;
+    --color-dark-card: #11121e;
+    --color-dark-player: #191a2c;
+    --color-dark-input-border: #252640;
+    --color-dark-input-border-focused : #505282;
+    --color-dark-icon: #9da3af;
+    --color-dark-text-body: #808692;
+
     --color-test: oklch(18.74% .024 280.08 / var(--tw-bg-opacity, 1));
     --color-background: oklch(13.85% .025 273.24 / var(--tw-bg-opacity, 1));
-    --color-card: #9D8D8F;
-    --color-redish: #E64833;
-    --color-brownish: #874F41;
-    --color-blueish: #90AEAD;
-    --color-text-bg: #F5F5F5;
     --color-light-text: rgb(255,255,255 / var(--tw-bg-opacity, 1));
-    --color-gradient-dark: background-image: radial-gradient(77% 77% at 50% 0%, #586984 0%, rgba(88, 105, 132, 0) 100%);
+
+    --color-gradient-light: radial-gradient(77% 77% at 50% 0%, #EDECFC 0%, rgba(237, 236, 252, 0) 100%);
+    --color-gradient-dark: radial-gradient(77% 77% at 50% 0%, #586984 0%, rgba(88, 105, 132, 0) 100%);
+
+    --font-inter: "Inter", "sans-serif"
   }
 
-.section-heading {
-  @apply text-base font-bold uppercase tracking-wide dark:text-white py-3;
-}
+  .section-heading {
+    @apply text-xs font-bold uppercase tracking-wide;
+  }
   
-/* .section-heading-underlined {
-  @apply section-heading border-b pb-4 dark:border-dark-border;
-} */
+  .section-heading-underlined {
+    @apply section-heading border-b pb-4 dark:border-dark-border;
+  }
+  
